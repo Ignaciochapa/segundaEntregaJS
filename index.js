@@ -28,14 +28,39 @@ Menu.push (Bebida1)
 function suma (a,b) {
     resultado = a+b    
 }
-// Comienzo del programa
-const section = document.querySelector('.section')
-const formularioNombre = document.createElement
+function redireccionarEleccion() {
+    location.href = "eleccion.html"
+}
+// Manipulación DOM
+const section = document.querySelector('#section-id')
+section.classList.add('section')
 
-{/* <section class="section">
-            <form class="formulario">
-                <h3>¡Hola!, como te llamas?</h3>
-                <input class="input-nombre" type="text" name="input-nombre" placeholder="Por favor, ingrese aquí su nombre">
-                <input class="input-aceptar" type="submit" value="ACEPTAR">
-            </form>
-        </section> */}
+const formularioNombre = document.querySelector('#formulario-id')
+formularioNombre.classList.add('formulario')
+
+const tituloFormulario = document.querySelector('#titulo-id')
+tituloFormulario.classList.add('titulo')
+tituloFormulario.innerText = '¡Hola!, como te llamas?'
+
+const inputNombre = document.querySelector('.input1')
+
+const inputAceptar = document.querySelector('.input2')
+// Variable que guarda el nombre del cliente
+let nombreCliente = ''
+// Evento que escucha a inputNombre y devuelva un alert personalizado
+formularioNombre.addEventListener("submit", (e) => {
+    e.preventDefault()
+    nombreCliente = inputNombre.value
+    swal("¡Buen trabajo!", `Bienvenido ${nombreCliente}`, "success")
+    console.log(nombreCliente)
+    formularioNombre.reset()
+})
+// Boton para poder redireccionar al html de pedidos
+const botonEleccion = document.createElement('button')
+botonEleccion.setAttribute('type','submit')
+botonEleccion.classList.add('boton1')
+botonEleccion.innerText = 'Quiero pedir'
+section.append(botonEleccion)
+botonEleccion.addEventListener("click", (e) => {
+    redireccionarEleccion()
+})

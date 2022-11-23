@@ -34,7 +34,7 @@ section {
     background-color: rgba(0, 0, 0, 0.534);
 }
   
-.input-nombre {
+.input1 {
     border: 0px;
     text-decoration: none;
     color: white;
@@ -42,11 +42,21 @@ section {
     background-color:transparent;
 }
 
-.input-aceptar {
+.input2 {
     width: 40%;
     border: 0px;
     border-radius: 20px;
     margin: 0 auto;
     cursor: pointer;
     font-weight: 600;
+}
+
+.boton1 {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    color: black;
+    left: auto;
+    top: 80%
 }
