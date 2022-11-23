@@ -19,39 +19,13 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="section-contacto">
-                <div class="formulario-contacto">
-                    <form action="" method="get" enctype="text/plain"></form>
-                        <h2 class="titulo">Si tenes dudas, dejanos tus datos y te contactamos a la brevedad</h2> 
-                        <div class="datos">   
-                            <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" placeholder="Escriba su nombre y apellido" id="nombre" />
-                            <label for="numero">Número telefónico</label>
-                            <input type="text" placeholder="Escriba su numero telefónico" id="numero" />
-                            <label for="correo">Correo Electrónico</label>
-                            <input type="email" placeholder="Escriba su correo electrónico" id="correo" />
-                        </div>
-                        <div class="parrafo">
-                            <p class="pregunta">Por donde desea ser contactado?</p>
-                        </div>
-                        <div class="dondecontactar">
-                            <input type="radio" name="contacto" id="whatsapp" class="input"/>
-                            <label for="whatsapp">WhatsApp</label>
-                            <input type="radio" name="contacto" id="correo electronico" class="input"/>
-                            <label for="correo electronico">Correo Electrónico</label>
-                            <input type="radio" name="contacto" id="llamada telefonica" class="input"/>
-                            <label for="llamada telefonica">Llamada Telefónica</label>
-                        </div>
-                        <div class="aceptar">
-                            <input type="checkbox" name="terminos" id="terminos" />
-                            <label for="terminos">Aceptar terminos y condiciones</label>
-                            <button type="submit" class="card-button" onclick="alert('Enviado exitosamente')">Enviar</button>
-                        </div>
-                    </form>    
-                </div>    
-            </section>
-        </main>
-        <script src="/main.js"></script>
+        <section class="section">
+            <form class="formulario">
+                <h3>¡Hola!, como te llamas?</h3>
+                <input class="input-nombre" type="text" name="input-nombre" placeholder="Por favor, ingrese aquí su nombre">
+                <input class="input-aceptar" type="submit" value="ACEPTAR">
+            </form>
+        </section>
+        <script src="/index.js"></script>
     </body>
 </html>

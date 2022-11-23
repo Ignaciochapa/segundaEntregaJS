@@ -35,9 +35,11 @@ function opcionIncorrecta () {
     alert(`Por favor, ingrese una opción correcta`)
 }
 // Comienzo
-let nombreCliente = prompt(`¡Hola!, como te llamas?`)
+let nombreCliente = document.querySelector('.input-nombre')
+let botonAceptar = document.querySelector('button-aceptar')
+// let nombreCliente = prompt(`¡Hola!, como te llamas?`)
 
-    while (nombreCliente != Number) {
+    //while (nombreCliente != Number) {
         let pedido = prompt(nombreCliente + `, que quieres pedir hoy? 
         
         (ingrese 1, 2 o 3 segun corresponda)
@@ -52,7 +54,7 @@ let nombreCliente = prompt(`¡Hola!, como te llamas?`)
             alert(`Tu pedido se realizó con éxito`)
             despedida()
             console.log(pedido)
-            break
+            //break
         }
 
         if (pedido == 2) {
@@ -61,7 +63,7 @@ let nombreCliente = prompt(`¡Hola!, como te llamas?`)
             alert(`Tu pedido se realizó con éxito`)
             despedida()
             console.log(pedido)
-            break
+            //break
         }
 
         if (pedido == 3) {
@@ -70,8 +72,8 @@ let nombreCliente = prompt(`¡Hola!, como te llamas?`)
             alert(`Tu pedido se realizó con éxito`)
             despedida()
             console.log(pedido)
-            break
+           // break
         } else {
             opcionIncorrecta()
         }
-    }
+    //}
