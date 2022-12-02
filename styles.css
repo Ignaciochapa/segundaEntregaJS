@@ -52,11 +52,20 @@ section {
 }
 
 .boton1 {
-    position: fixed;
+    position: absolute;
     width: 70px;
     height: 70px;
     border-radius: 10px;
     color: black;
-    left: auto;
     top: 80%
+}
+
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color: rgb(116, 38, 189);
+    padding-inline: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

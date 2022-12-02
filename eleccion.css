@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./img/milanesa-con-pure.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
